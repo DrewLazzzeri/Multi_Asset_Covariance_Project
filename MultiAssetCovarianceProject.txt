@@ -1,0 +1,16 @@
+There are currently 5 files in this directory:
+
+1. AA_Run_Time_Series_CV.ipynb: In progress Jupyter Notebook which 3 ML/AI algorithms on past covariance data to predict the future covariance matrix.  The three algorithms are XG Boost, a 3 layer NN and a Conv-LSTM network.
+Many of the parameters for the covariance matrix, initial training period and re-train intervals are mutable and can evaluate efficacy over different windows.
+The parameters are listed at the top of the workflow for easy changing/access.
+
+2. CommodityIndex.csv: Contains the GSCI commodity index returns for major commodity sub-groups.
+
+3. FactSet Asset Pull.xlsx: Contains the FactSet FDS codes to pull data for a variety of index mutual funds/ETF vehicles representing major asset classes.  
+This is refreshable with a FactSet License/access.
+
+4. Liquid_Asset_Rets.csv:  Contains the hard-coded return data for all of the stock and bond funds used in the study.
+
+5. Standard Covariance Matrix Methods (In Progress).ipynb: Has a similar strucutre to the ML algorithm but creates more naive benchmarks for ML performance comparison.
+Specifically, it cross-validates three commonly employed covariance estimation techniques (exponential, Ledoit-Wolf shrinkage and OAS shrinkage) over various
+spans and selects the parameters which work well over a trailing window to build a more robust comparison benchmark.
